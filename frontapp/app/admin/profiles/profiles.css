@@ -1,0 +1,346 @@
+/* Container Principal */
+.profiles-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #2d3748;
+}
+
+/* Cabeçalho */
+.page-header {
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a202c !important;
+    margin: 0 0 4px 0;
+}
+
+.page-header p {
+    color: #718096 !important;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Cards com bordas arredondadas e fundo branco */
+.card {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+    color: #2d3748 !important;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a202c !important;
+    margin: 0 0 20px 0;
+}
+
+/* Layout do Formulário */
+.form-layout {
+    display: flex;
+    gap: 32px;
+}
+
+.form-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3748 !important;
+}
+
+.form-group label span {
+    color: #e53e3e !important;
+}
+
+/* Inputs e Selects com cores explícitas */
+.form-group input,
+.form-group select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background-color: #ffffff !important;
+    color: #1a202c !important;
+    transition: border-color 0.2s;
+}
+
+.form-group select option {
+    background-color: #ffffff !important;
+    color: #1a202c !important;
+}
+
+.form-group input::placeholder {
+    color: #a0aec0 !important;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 1px #3182ce;
+}
+
+.field-hint {
+    font-size: 11px;
+    color: #718096 !important;
+}
+
+/* Quadrado de Preview do Avatar */
+.avatar-preview-box {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-circle-large {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: #edf2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.avatar-circle-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar-placeholder-icon {
+    color: #718096;
+}
+
+.preview-label {
+    font-size: 12px;
+    color: #718096 !important;
+}
+
+/* Botões do Formulário */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: #1a73e8 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #1557b0 !important;
+}
+
+.btn-secondary {
+    background-color: #ffffff !important;
+    border-color: #cbd5e0;
+    color: #4a5568 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #f7fafc !important;
+}
+
+/* Caixas de Pesquisa */
+.table-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    position: relative;
+    width: 320px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #718096;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-sizing: border-box;
+    background-color: #ffffff !important;
+    color: #1a202c !important;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #a0aec0 !important;
+}
+
+.search-box input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 1px #3182ce;
+}
+
+/* Tabela Customizada */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff !important;
+}
+
+.custom-table th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568 !important;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    background-color: #f8fafc !important;
+}
+
+.custom-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #2d3748 !important;
+    background-color: #ffffff !important;
+}
+
+/* Célula do Usuário */
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #edf2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info strong {
+    color: #1a202c !important;
+    font-size: 14px;
+}
+
+.user-info span {
+    color: #718096 !important;
+    font-size: 12px;
+}
+
+/* Avatares na Tabela */
+.table-avatar-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.table-avatar-initials {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e9d8fd;
+    color: #6b46c1 !important;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botões da Tabela */
+.actions-cell {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ffffff !important;
+}
+
+.btn-edit {
+    border: 1px solid #bee3f8;
+    color: #3182ce !important;
+}
+
+.btn-edit:hover {
+    background-color: #ebf8ff !important;
+}
+
+.btn-delete {
+    border: 1px solid #fed7d7;
+    color: #e53e3e !important;
+}
+
+.btn-delete:hover {
+    background-color: #fff5f5 !important;
+}
